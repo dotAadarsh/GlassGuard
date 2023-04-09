@@ -1,6 +1,7 @@
 # GlassGuard
 A Real-Time Glass Breaking Detection System Using Edge Impulse
 
+## Introduction
 
 The problem to develop a system that can detect the sound of breaking glass in real-time using Low cost microcontroller and [Edge Impulse](https://www.edgeimpulse.com/) machine learning platform. This system can be used for various applications such as home security, commercial building security, car alarm systems, and glass safety monitoring in public areas such as parks or playgrounds.
 
@@ -8,3 +9,25 @@ By using Edge Impulse, the system can be trained to detect the unique sound sign
 
 This system will be useful in improving the safety and security of homes and public places by detecting glass-breaking events in real-time. It can help prevent burglaries, vandalism, and other crimes related to glass breaking. Additionally, it can provide a cost-effective solution for glass safety monitoring in public areas, which can reduce the risk of injury from broken glass.
 
+
+## Grab your supplies!
+
+### Hardwares
+
+- [Infineon CY8CKIT-062S2 Pioneer Kit](https://www.infineon.com/cms/en/product/evaluation-boards/cy8ckit-062s2-43012/)
+- [CY8CKIT-028-SENSE](https://www.infineon.com/cms/en/product/evaluation-boards/cy8ckit-028-sense/)
+
+### Softwares
+
+- [Edge Impulse]()
+- [Cypress Programmer](https://softwaretools.infineon.com/tools/com.ifx.tb.tool.cypressprogrammer)
+
+## The building process
+
+Edge Impulse Studio provides a comprehensive platform for building and deploying machine learning models for edge devices. It simplifies the process of collecting sensor data, training models, and deploying them to edge devices. So sign up here](https://studio.edgeimpulse.com/signup) to get started!
+
+Next we need to integrate the edge impulse studio with Infineon CY8CKIT-062S2 Pioneer Kit. Before that, we need to know W's about it. 
+
+The Infineon CY8CKIT-062S2 Pioneer Kit is an ideal platform for developing embedded systems and IoT devices that require low power consumption, high processing capabilities, and connectivity options. It is suitable for a wide range of applications such as industrial automation, consumer electronics, medical devices, and smart home appliances.
+
+Follow [this](https://docs.edgeimpulse.com/docs/development-platforms/officially-supported-mcu-targets/infineon-cy8ckit-062s2) article to integrate with Edge Impulse
