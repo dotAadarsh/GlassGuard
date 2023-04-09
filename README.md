@@ -26,8 +26,30 @@ This system will be useful in improving the safety and security of homes and pub
 
 Edge Impulse Studio provides a comprehensive platform for building and deploying machine learning models for edge devices. It simplifies the process of collecting sensor data, training models, and deploying them to edge devices. So sign up here](https://studio.edgeimpulse.com/signup) to get started!
 
-Next we need to integrate the edge impulse studio with Infineon CY8CKIT-062S2 Pioneer Kit. Before that, we need to know W's about it. 
 
-The Infineon CY8CKIT-062S2 Pioneer Kit is an ideal platform for developing embedded systems and IoT devices that require low power consumption, high processing capabilities, and connectivity options. It is suitable for a wide range of applications such as industrial automation, consumer electronics, medical devices, and smart home appliances.
+- Create a new project in edge impulse studio
+![Dashboard-Edge-Impulse](https://user-images.githubusercontent.com/71810927/230767885-45a0859b-5e0f-4fb4-8fe6-fb334860f266.png)
 
-Follow [this](https://docs.edgeimpulse.com/docs/development-platforms/officially-supported-mcu-targets/infineon-cy8ckit-062s2) article to integrate with Edge Impulse
+- Next we need to integrate the edge impulse studio with Infineon CY8CKIT-062S2 Pioneer Kit. The Infineon CY8CKIT-062S2 Pioneer Kit is an ideal platform for developing embedded systems and IoT devices that require low power consumption, high processing capabilities, and connectivity options. It is suitable for a wide range of applications such as industrial automation, consumer electronics, medical devices, and smart home appliances. Follow [this](https://docs.edgeimpulse.com/docs/development-platforms/officially-supported-mcu-targets/infineon-cy8ckit-062s2) article to integrate with Edge Impulse. Once you install the cyprogrammer and programmed the infineon kit, and when you run `edge-impulse-daemon` in terminal, you will be able to see the device.
+
+![GlassGuard-Devices-Edge-Impulse](https://user-images.githubusercontent.com/71810927/230767938-7567e643-b977-43e2-a7b8-8e657d3a410e.png)
+
+- Data acquisition - This is the main part of our project. We need to collect as musch as data to train out model. For our project, we need sounds which includes glass breaking and household sound. I have used some audios present on the YouTube. I have classifed the dataset into two - glass break and normal. The more the data, the more the accuracy. Try capturing as much as data as possible. Click on start sampling to collect the data from the hardware. You can also see the log in the terminal.
+
+![GlassGuard-Data-acquisition-Edge-Impulse](https://user-images.githubusercontent.com/71810927/230768108-adee0631-8f20-451c-8a80-2acf00531035.png)
+
+![Screenshot 2023-04-09 161432](https://user-images.githubusercontent.com/71810927/230768153-2dfae37e-35bd-4395-9a97-6efcd96a1b0c.png)
+
+- Impusle design -  impulse design is the process of creating a machine learning model for a specific use case or application. The impulse is a collection of data, machine learning models, and deployment configurations that can be used to generate an optimized firmware library for deployment on edge devices.
+
+Check out [this](https://docs.edgeimpulse.com/docs/tutorials/audio-classification) audio classification project to understand better.
+
+![GlassGuard-Create-impulse-Edge-Impulse](https://user-images.githubusercontent.com/71810927/230768241-ab0509c4-0331-4bc6-a332-7d657bcc269d.png)
+
+- Model testing in Edge Impulse is an important step in the impulse design process. Once you have created a machine learning model, you need to evaluate its performance to ensure that it is accurate and reliable. 
+
+![GlassGuard-Model-testing-Edge-Impulse](https://user-images.githubusercontent.com/71810927/230768290-ac0c69a3-f3a5-4d05-bef5-5009919b4aa5.png)
+
+- Deployment - you can choose between different hardware and software for the deployment of our model
+
+![GlassGuard-Deployment-Edge-Impulse](https://user-images.githubusercontent.com/71810927/230768331-731b7569-765c-4c8b-a5d6-62fecdd3fd02.png)
